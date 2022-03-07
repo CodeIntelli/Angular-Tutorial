@@ -1,0 +1,27 @@
+MAIN CONCEPT 
+
+- INSTALL AND SETUP THE ANGULAR APP
+- STRUCTURE
+- COMPONENT `
+- MODULE
+- EVENT
+- BINDING
+- API
+- ROUTING
+- FORMS
+
+
+Install Command line for Angular
+
+    npm install -g @angular/cli
+    or 
+    npm install -g @angular/cli@next
+
+after this
+
+- ng version
+
+Create New Web Application
+
+- ng new Project_Name
+
