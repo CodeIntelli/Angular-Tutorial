@@ -1,0 +1,12 @@
+<h1>property-binding-component</h1>
+<p>interpolation</p>
+<input type="text" disabled="{{ disabledBox }}" value="{{ name }}" />
+<br /><br /><br /><br />
+
+<p>property binding</p>
+<input type="text" [disabled]="disabledBox" [value]="name" />
+<br /><br />
+<button (click)="enableBox()">Enable Box</button>
+
+
+<!-- here after click enable box you can see only property binding textbox will be enabled but there will no changes in interpolation it just because with property binding you set the attribute with the exact value of the property, now with interpolation, you can mix dynamic content from your model within the string,  -->

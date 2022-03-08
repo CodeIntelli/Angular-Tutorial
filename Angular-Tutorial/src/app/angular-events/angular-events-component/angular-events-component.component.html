@@ -1,0 +1,27 @@
+<h1>Angular Events</h1>
+
+<button (click)="myEvent('this is click event')" >Click Me</button><br /><br /><br />
+<strong>Keyup Event</strong><br /><br />
+<input type="text" #box1 (keyup)="myEvent(box1.value)" />
+<br /><br />
+<strong>keyup with enter and space Event</strong><br /><br />
+<input type="text" #box2 (keyup.enter)="myEvent(box2.value)" (keyup.space)="myEvent(box2.value)" />
+<br /><br />
+<strong>keydown</strong><br /><br />
+<input type="text" #box3 (keydown)="myEvent(box3.value)" />
+<br /><br />
+<strong>blur</strong><br /><br />
+<input type="text" #box4 (blur)="myEvent(box4.value)" />
+<br /><br />
+<strong>mouseover & mouseleave</strong><br /><br />
+<input type="text" #box5 (mouseover)="myEvent(box5.value)" />
+<br /><br />
+<input type="text" #box6 (mouseleave)="myEvent(box6.value)" />
+<br /><br />
+<strong>get values on textbox</strong><br /><br />
+<input type="text" #box (keyup)="myEvent(box.value)" />
+<br /><br />
+
+<strong>Running Multiple Event on single block</strong><br /><br />
+<input type="text" #box7 (keyup.enter)="myEvent(box2.value)" (keyup.space)="myEvent(box7.value)" />
+<br /><br />
