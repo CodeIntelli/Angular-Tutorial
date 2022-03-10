@@ -1,0 +1,44 @@
+<h1>Conditions In Angular</h1>
+<!-- <h1 *ngIf="show; else elseBlock">
+  It Only SHow when ever the show is true otherwise it will not display
+</h1> -->
+<!-- <ng-template #elseBlock>
+  <h1>
+    Here we can display else block if the condition is wrong. For showing else
+    block we have to give id to ng-template and then in *ngif we have to write
+    "variable else id_given"
+  </h1>
+</ng-template>
+
+<h1>Now For Condition based on string</h1>
+<h1 *ngIf="stringCondition == 'yes'; else elseBlock2">
+  It Only SHow when ever the show is true otherwise it will not display
+</h1>
+<ng-template #elseBlock2>
+  <h1>
+    Here we can display else block if the condition is wrong. For showing else
+    block we have to give id to ng-template and then in *ngif we have to write
+    "variable else id_given"
+  </h1>
+</ng-template>
+
+<h1>Now Nested If Else Block</h1>
+<h1 *ngIf="stringCondition == 'yesss'; then ifBlock; else elseBlock3  "></h1>
+<ng-template #ifBlock>
+  <h1>if block</h1>
+</ng-template>
+<ng-template #elseBlock3>
+  <h1>else Block</h1>
+</ng-template> -->
+
+<!-- else if statement with property binding -->
+<!-- if we are using only ngif then it display when condition becomes true -->
+<ng-template [ngIf]="color == 'red'">
+  <h1>Red Block</h1>
+</ng-template>
+<ng-template [ngIf]="color == 'green'">
+  <h1>Green Block</h1>
+</ng-template>
+<ng-template [ngIf]="color == 'yellow'">
+  <h1>Yellow Block</h1>
+</ng-template>

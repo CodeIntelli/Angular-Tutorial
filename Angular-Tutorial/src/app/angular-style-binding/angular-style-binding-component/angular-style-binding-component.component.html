@@ -1,0 +1,16 @@
+<h1>Style Binding In Angular</h1>
+<!-- Difference between normal style and style binding -->
+<!-- Add dynamic style -->
+<!-- Update Style with button click -->
+<!-- Add Conditional style -->
+
+<!-- normal styles -->
+<h1 style="color: red">Header 1</h1>
+<h1 [style.color]="'green'">Header 2</h1>
+<h1 [style.backgroundColor]="'blue'">Header 3</h1>
+<h1 [style.color]="color">Dynamic Header 1</h1>
+<button (click)="updateColor()" (dblclick)="oldColor()">
+  Generate New Color
+</button>
+
+<h1 [style.color]="err ? 'red' : 'green'">Conditional Header 1</h1>

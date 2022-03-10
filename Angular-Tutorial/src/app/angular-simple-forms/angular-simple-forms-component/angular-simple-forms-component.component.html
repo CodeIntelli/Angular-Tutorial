@@ -1,0 +1,47 @@
+<h1>Forms in Angular</h1>
+<form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
+  <!-- //@ts-ignore -->
+  <input
+    type="text"
+    ngModel
+    style="width: '500px'; height: '40px'; font-size: 16px"
+    name="username"
+    placeholder="Enter your name"
+  />
+  <br /><br /><br />
+  <input
+    type="text"
+    ngModel
+    style="width: '500px'; height: '40px'; font-size: 16px"
+    name="address"
+    placeholder="Enter your address"
+  />
+  <br /><br /><br />
+  <input
+    type="text"
+    ngModel
+    style="width: '500px'; height: '40px'; font-size: 16px"
+    name="age"
+    placeholder="Enter your age"
+  />
+  <br /><br /><br />
+  <input
+    type="password"
+    ngModel
+    style="width: '500px'; height: '40px'; font-size: 16px"
+    name="password"
+    placeholder="Enter your password"
+  />
+  <br /><br /><br />
+  <Button
+    style="
+      padding: '10px 12px';
+      background-color: 'green';
+      border: 0;
+      border-radius: 12px;
+      color: white;
+      outline: 'none';
+    "
+    >Get User Details</Button
+  >
+</form>

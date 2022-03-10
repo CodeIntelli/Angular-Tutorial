@@ -1,0 +1,35 @@
+<h1>Loops In Angular</h1>
+<h4>{{ arrData }}</h4>
+<!-- Make a array -->
+<h2 style="color: green; font-size: 13px" *ngFor="let item of arrData">
+  {{ item }}
+</h2>
+<!-- apply for loop with it with html table -->
+
+<table border="1">
+  <thead>
+    <td>Name</td>
+  </thead>
+  <tr *ngFor="let item of arrData">
+    <td>{{ item }}</td>
+  </tr>
+</table>
+
+<!-- Make a array with object -->
+<h2 style="color: yellowgreen; font-size: 13px" *ngFor="let item of arrObj">
+  {{ item.name }},{{ item.age }}
+</h2>
+
+<!-- apply for loop with it with html table -->
+<table border="1">
+  <thead>
+    <td>Name</td>
+    <td>Age</td>
+    <td>Email</td>
+  </thead>
+  <tr *ngFor="let item of arrObj">
+    <td>{{ item.name }}</td>
+    <td>{{ item.age }}</td>
+    <td>{{ item.email }}</td>
+  </tr>
+</table>

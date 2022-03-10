@@ -1,0 +1,23 @@
+<h1>angular-add-bootstrap-component works!</h1>
+
+<div class="alert alert-primary" role="alert">
+  A simple primary alert—check it out!
+</div>
+<div style="padding: '0px 500px'">
+  <p>
+    <ngb-alert [dismissible]="false">
+      <strong>Warning!</strong> Better check yourself, you're not looking too
+      good.
+    </ngb-alert>
+  </p>
+  <p *ngFor="let alert of alerts">
+    <ngb-alert [type]="alert.type" (closed)="close(alert)">{{
+      alert.message
+    }}</ngb-alert>
+  </p>
+  <p>
+    <button type="button" class="btn btn-primary" (click)="reset()">
+      Reset
+    </button>
+  </p>
+</div>

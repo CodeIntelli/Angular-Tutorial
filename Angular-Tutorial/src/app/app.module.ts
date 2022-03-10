@@ -13,6 +13,21 @@ import { GetTextBoxValueModule } from './get-text-box-value/get-text-box-value.m
 
 import { PropertyBindingModule } from './property-binding/property-binding.module'
 
+import { AngularConditionsModule } from './angular-conditions/angular-conditions.module'
+import { AngularSwitchCaseModule } from './angular-switch-case/angular-switch-case.module';
+import { AngularLoopsModule } from './angular-loops/angular-loops.module';
+import { AngularSimpleFormsModule } from './angular-simple-forms/angular-simple-forms.module';
+import { AngularHeaderFooterModule } from './angular-header-footer/angular-header-footer.module';
+import { AngularStyleBindingModule } from './angular-style-binding/angular-style-binding.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AngularAddBootstrapModule } from './angular-add-bootstrap/angular-add-bootstrap.module';
+import { FormsModule, ReactiveFormsModule }
+  from '@angular/forms';
+
+import { BrowserAnimationsModule }
+  from '@angular/platform-browser/animations';
+import { AngularAddMaterialModule } from './angular-add-material/angular-add-material.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +37,9 @@ import { PropertyBindingModule } from './property-binding/property-binding.modul
     BrowserModule,
     AppRoutingModule,
     // import all other modules here
-    UsersModule, AngularFunctionsModule, AngularEventsModule, GetTextBoxValueModule, PropertyBindingModule
+    UsersModule, AngularFunctionsModule, AngularEventsModule, GetTextBoxValueModule, PropertyBindingModule, AngularConditionsModule, AngularSwitchCaseModule, AngularLoopsModule, AngularSimpleFormsModule, AngularHeaderFooterModule, AngularStyleBindingModule, NgbModule, AngularAddBootstrapModule, FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule, AngularAddMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
