@@ -210,23 +210,68 @@ export class AppModule {}
 
 # Pass data parent to child component
 
+- Make Users Component
+- Make it child of app component
+- pass data to app to child component
+- display data in child component
+
 # Angular Reusable component
+
+- Make a user component
+- use it inside app component as child
+- pass data from parent to child
+- use for loop and result child component
 
 # Pass data parent to child component
 
-# Angular Reusable Component
-
-# Pass data child to parent component
+- make a user component
+- use it inside app component or parent component as child
+- pass data from child to parent with EventEmitter
 
 # what are pipes
 
+- What is pipe
+- pipe with string
+- pipe with date
+- pipe with slice
+- pipe with currency
+- examples
+
 # angular routing basics
 
+- make a new angular project
+- make 2 component
+- add routing in app-routing-module file
+- write code in html file for making routing link
+- test routing
+
+  > if you did not select routing option on the project make time
+
+  ```sh
+  ng generate module app-routing --flat --module-app
+  ```
+
 # 404 page in angular
+
+- What is directives?
+- example of default directives
+- how to make custom directives
+- run command
+
+```sh
+ng g directive
+```
+
+- Use it with html
 
 # Custom Directive
 
 # Angular Service Based
+
+- What is Service in angular?
+- How to make Service ?
+- How to use Service?
+- Example
 
 # Call a simple API
 
@@ -257,11 +302,3 @@ export class AppModule {}
 # Pre-filled forms
 
 # what is reactive forms
-
-```
-
-```
-
-```
-
-```

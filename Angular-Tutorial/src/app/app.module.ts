@@ -27,19 +27,23 @@ import { FormsModule, ReactiveFormsModule }
 import { BrowserAnimationsModule }
   from '@angular/platform-browser/animations';
 import { AngularAddMaterialModule } from './angular-add-material/angular-add-material.module';
-
+import { MatButtonModule } from '@angular/material/button'
+import { PassDataPtcModule } from './pass-data-ptc/pass-data-ptc.module';
+import { AngularReuseableComponentModule } from './angular-reuseable-component/angular-reuseable-component.module';
+import { PassDataCtpModule } from './pass-data-ctp/pass-data-ctp.module';
+import { AngularPipesModule } from './angular-pipes/angular-pipes.module';
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
+    BrowserModule, BrowserAnimationsModule,
+    AppRoutingModule, MatButtonModule,
     // import all other modules here
     UsersModule, AngularFunctionsModule, AngularEventsModule, GetTextBoxValueModule, PropertyBindingModule, AngularConditionsModule, AngularSwitchCaseModule, AngularLoopsModule, AngularSimpleFormsModule, AngularHeaderFooterModule, AngularStyleBindingModule, NgbModule, AngularAddBootstrapModule, FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule, AngularAddMaterialModule
+    AngularAddMaterialModule, PassDataPtcModule, AngularReuseableComponentModule, PassDataCtpModule, AngularPipesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
